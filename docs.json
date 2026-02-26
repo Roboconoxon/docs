@@ -3,11 +3,11 @@
   "theme": "mint",
   "name": "RoboCon Oxfordshire Docs",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#8b61c2",
+    "light": "#8b61c2",
+    "dark": "#8b61c2"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/images/RoboConLogo.png",
   "navigation": {
     "products": [
       {
@@ -29,10 +29,7 @@
       }
     ]
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
+  "logo": "/images/RoboConLogo.png",
   "navbar": {
     "links": [
       {
@@ -64,5 +61,6 @@
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
-  }
+  },
+  "description": "Documentation for RoboCon Oxfordshire"
 }
