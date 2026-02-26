@@ -33,27 +33,27 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "Helpdesk",
+        "href": "https://support.roboconoxon.org.uk"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "label": "RoboCon Oxfordshire",
+      "href": "https://roboconoxon.org.uk"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
@@ -62,5 +62,12 @@
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   },
-  "description": "Documentation for RoboCon Oxfordshire"
+  "description": "Documentation for RoboCon Oxfordshire",
+  "banner": {
+    "content": "Welcome to the new RoboCon Docs! Please note that this docs is still WIP.",
+    "dismissible": true
+  },
+  "background": {
+    "decoration": "grid"
+  }
 }
