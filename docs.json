@@ -33,6 +33,12 @@
         "product": "MyRoboCon Docs",
         "versions": [
           {
+            "version": "V2025.1",
+            "pages": [
+              "participant-training"
+            ]
+          },
+          {
             "version": "V2026.2"
           }
         ]
