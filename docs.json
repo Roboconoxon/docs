@@ -16,7 +16,9 @@
           {
             "tab": "Hardware",
             "pages": [
-              "batteries",
+              "welcome",
+              "brainbox",
+              "Batteries",
               "charging",
               "minibot-assembly",
               "returning-of-kit"
@@ -26,6 +28,14 @@
       },
       {
         "product": "Python Docs"
+      },
+      {
+        "product": "MyRoboCon Docs",
+        "versions": [
+          {
+            "version": "V2026.2"
+          }
+        ]
       }
     ]
   },
