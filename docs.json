@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "RoboCon Oxfordshire Docs",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
@@ -9,7 +9,25 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "groups": []
+    "products": [
+      {
+        "product": "BrainBox Docs",
+        "tabs": [
+          {
+            "tab": "Hardware",
+            "pages": [
+              "batteries",
+              "charging",
+              "minibot-assembly",
+              "returning-of-kit"
+            ]
+          }
+        ]
+      },
+      {
+        "product": "Python Docs"
+      }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
