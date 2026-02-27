@@ -40,13 +40,30 @@
           },
           {
             "version": "V2026.2",
+            "default": true,
             "groups": [
               {
                 "group": "Participant UI",
                 "pages": [
                   "dashboard",
                   "events",
-                  "scoring"
+                  "scoring",
+                  "leaderboard"
+                ]
+              }
+            ]
+          },
+          {
+            "version": "V2026.4",
+            "default": true,
+            "groups": [
+              {
+                "group": "Participant UI",
+                "pages": [
+                  "dashboard-copied-1",
+                  "events-copied-1",
+                  "scoring-copied-1",
+                  "leaderboard-copied-1"
                 ]
               }
             ]
