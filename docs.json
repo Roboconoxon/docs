@@ -122,10 +122,6 @@
           {
             "label": "Participant Mail",
             "href": "https://mail.google.com/a/participants.roboconoxon.org.uk"
-          },
-          {
-            "label": "MyRoboCon Portal",
-            "href": "https://my.roboconoxon.org.uk"
           }
         ]
       }
