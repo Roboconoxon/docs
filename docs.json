@@ -33,6 +33,7 @@
       },
       {
         "product": "Programming Docs",
+        "icon": "computer",
         "color": {
           "light": "#8b61c2",
           "dark": "#8b61c2"
