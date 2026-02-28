@@ -32,11 +32,19 @@
         ]
       },
       {
-        "product": "Python Docs",
+        "product": "Programming Docs",
         "color": {
           "light": "#8b61c2",
           "dark": "#8b61c2"
-        }
+        },
+        "pages": [
+          "computer-vision",
+          "gpio",
+          "initialising-the-robot",
+          "learning-python",
+          "libraries",
+          "motors"
+        ]
       },
       {
         "product": "MyRoboCon Docs",
