@@ -12,6 +12,11 @@
     "products": [
       {
         "product": "BrainBox Docs",
+        "icon": "robot",
+        "color": {
+          "light": "#8b61c2",
+          "dark": "#8b61c2"
+        },
         "tabs": [
           {
             "tab": "Hardware",
@@ -27,10 +32,19 @@
         ]
       },
       {
-        "product": "Python Docs"
+        "product": "Python Docs",
+        "color": {
+          "light": "#8b61c2",
+          "dark": "#8b61c2"
+        }
       },
       {
         "product": "MyRoboCon Docs",
+        "icon": "globe",
+        "color": {
+          "light": "#8b61c2",
+          "dark": "#8b61c2"
+        },
         "versions": [
           {
             "version": "V2025.1",
@@ -55,7 +69,6 @@
           },
           {
             "version": "V2026.4",
-            "default": true,
             "groups": [
               {
                 "group": "Participant UI",
