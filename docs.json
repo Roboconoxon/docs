@@ -38,13 +38,22 @@
           "light": "#8b61c2",
           "dark": "#8b61c2"
         },
-        "pages": [
-          "computer-vision",
-          "gpio",
-          "initialising-the-robot",
-          "learning-python",
-          "libraries",
-          "motors"
+        "tabs": [
+          {
+            "tab": "Guides",
+            "pages": [
+              "computer-vision",
+              "gpio",
+              "initialising-the-robot",
+              "learning-python",
+              "libraries",
+              "motors"
+            ]
+          },
+          {
+            "tab": "API Reference",
+            "openapi": "openapi.json"
+          }
         ]
       },
       {
