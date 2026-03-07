@@ -49,10 +49,6 @@
               "libraries",
               "motors"
             ]
-          },
-          {
-            "tab": "API Reference",
-            "openapi": "openapi.json"
           }
         ]
       },
@@ -100,6 +96,10 @@
             ]
           }
         ]
+      },
+      {
+        "product": "AMS API Reference",
+        "openapi": "openapi.json"
       }
     ]
   },
