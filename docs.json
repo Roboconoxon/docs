@@ -99,6 +99,7 @@
       },
       {
         "product": "AMS API Reference",
+        "icon": "link",
         "openapi": "openapi.json"
       }
     ]
