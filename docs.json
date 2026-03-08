@@ -104,7 +104,6 @@
       },
       {
         "product": "Proposed AMS API",
-        "hidden": true,
         "openapi": "proposedapis.json"
       }
     ]
