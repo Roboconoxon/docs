@@ -101,6 +101,11 @@
         "product": "AMS API Reference",
         "icon": "link",
         "openapi": "openapi.json"
+      },
+      {
+        "product": "Proposed AMS API",
+        "hidden": true,
+        "openapi": "proposedapis.json"
       }
     ]
   },

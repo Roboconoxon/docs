@@ -1,0 +1,220 @@
+openapi: 3.0.3
+info:
+  title: RoboCon Oxfordshire AMS (Arena Management System)
+  description: API for managing tournament rounds, scoring, and leaderboards.
+  version: 1.0.0
+servers:
+  - url: https://ams.roboconoxon.org.uk
+    description: Production server
+  - url: http://localhost:8000/api/v1
+    description: Local development server
+
+components:
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+
+  schemas:
+    RoundInfo:
+      type: object
+      properties:
+        gameid:
+          type: integer
+        corner0team:
+          type: string
+        corner1team:
+          type: string
+        corner2team:
+          type: string
+        corner3team:
+          type: string
+
+    ScoreDetails:
+      type: object
+      properties:
+        gameid:
+          type: integer
+        corner0gp:
+          type: integer
+        corner0lp:
+          type: integer
+        corner1gp:
+          type: integer
+        corner1lp:
+          type: integer
+        corner2gp:
+          type: integer
+        corner2lp:
+          type: integer
+        corner3gp:
+          type: integer
+        corner3lp:
+          type: integer
+
+security:
+  - BearerAuth: []
+
+paths:
+  /round:
+    get:
+      tags:
+        - round
+      summary: Get current or next round information
+      responses:
+        '200':
+          description: Round details retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RoundInfo'
+
+  /round-start:
+    post:
+      tags:
+        - round
+      summary: Start a round
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                gameid:
+                  type: integer
+                alsostartallrobots:
+                  type: boolean
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "101 started"
+
+  /round-score-submit:
+    post:
+      tags:
+        - round
+      summary: Submit scores for a round
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                gameid:
+                  type: integer
+                corner0score:
+                  type: integer
+                corner1score:
+                  type: integer
+                corner2score:
+                  type: integer
+                corner3score:
+                  type: integer
+      responses:
+        '200':
+          description: Score submitted successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ScoreDetails'
+
+  /round-score:
+    get:
+      tags:
+        - round
+      summary: Get score for a specific game
+      parameters:
+        - name: gameid
+          in: query
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Score details retrieved
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ScoreDetails'
+                  - type: object
+                    properties:
+                      scoretimestamp:
+                        type: string
+                        format: date-time
+
+  /tournament-schedules:
+    get:
+      tags:
+        - tournament
+      summary: Get tournament schedules
+      parameters:
+        - name: amountofgames
+          in: query
+          required: false
+          description: Optional limit of games to return
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: A list of scheduled games
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    gameid:
+                      type: integer
+                    gamestatus:
+                      type: string
+                      enum: [started, finished, scored]
+                    corner0team:
+                      type: string
+                    corner1team:
+                      type: string
+                    corner2team:
+                      type: string
+                    corner3team:
+                      type: string
+
+  /tournament-leaderboard:
+    get:
+      tags:
+        - tournament
+      summary: Get tournament leaderboard
+      parameters:
+        - name: howmanyplaces
+          in: query
+          required: false
+          description: Optional limit of leaderboard records
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: The current leaderboard
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    placeindex:
+                      type: integer
+                    team:
+                      type: string
+                    gp:
+                      type: integer
+                    lp:
+                      type: integer
