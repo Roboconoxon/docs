@@ -7,7 +7,20 @@ icon: "brain-circuit"
 The **BrainBox** is the central nervous system of your kit. It contains all the electronics and software needed to power your robot.
 
 <Frame>
-  ![Image](/images/image-1.png)
+  <img
+    src="/images/angled.png"
+    alt="Image"
+    lightAlt="Image"
+    darkAlt="Image"
+    className="dark:hidden"
+  />
+  <img
+    src="/images/image-1.png"
+    alt="Image"
+    lightAlt="Image"
+    darkAlt="Image"
+    className="hidden dark:block"
+  />
 </Frame>
 
 ## Getting Started
@@ -46,11 +59,11 @@ The BrainBox distributes power from the battery to the rest of the robot, provid
 
 The BrainBox includes an integrated motor board with the following specifications:
 
-| Condition per channel     | Maximum Value |
-| :------------------------ | :------------ |
-| Continuous current        | 10A           |
-| Peak current (10 seconds) | 30A           |
-| Operating Voltage         | 12V           |
+| Condition per channel | Maximum Value |
+| :-- | :-- |
+| Continuous current | 10A |
+| Peak current (10 seconds) | 30A |
+| Operating Voltage | 12V |
 
 <Tip>
   **Control Tip:** You can toggle the 12V rail to turn devices on and off easily. Note that toggling this will also cut power to the motor board.
@@ -92,13 +105,13 @@ PWM is used to signal devices on how much "output" to provide—such as motor sp
 
 ### PWM Signal Ranges
 
-| Value | Pulse Length    |
-| :---- | :-------------- |
-| 178   | 2.39ms          |
-| 100   | 2ms             |
-| 0     | 1.5ms (Neutral) |
-| -100  | 1ms             |
-| -178  | 0.61ms          |
+| Value | Pulse Length |
+| :-- | :-- |
+| 178 | 2.39ms |
+| 100 | 2ms |
+| 0 | 1.5ms (Neutral) |
+| -100 | 1ms |
+| -178 | 0.61ms |
 
 ---
 
