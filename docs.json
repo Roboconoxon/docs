@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "aspen",
   "name": "RoboCon Oxfordshire Docs",
   "colors": {
     "primary": "#8b61c2",
@@ -164,10 +164,6 @@
     ]
   },
   "description": "Documentation for RoboCon Oxfordshire",
-  "banner": {
-    "content": "Welcome to the new RoboCon Docs! Please note that this docs is still WIP.",
-    "dismissible": true
-  },
   "background": {
     "decoration": "grid"
   }
