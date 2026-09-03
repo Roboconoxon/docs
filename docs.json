@@ -157,5 +157,10 @@
   "description": "Documentation for RoboCon Oxfordshire",
   "background": {
     "decoration": "grid"
+  },
+  "errors": {
+    "404": {
+      "redirect": true
+    }
   }
 }
