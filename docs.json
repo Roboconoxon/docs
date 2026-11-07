@@ -32,6 +32,13 @@
         ]
       },
       {
+        "product": "RoboCon 2027",
+        "pages": [
+          "box-markers-april-tags",
+          "rules"
+        ]
+      },
+      {
         "product": "Programming Docs",
         "icon": "computer",
         "color": {
