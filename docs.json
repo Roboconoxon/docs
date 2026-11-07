@@ -37,7 +37,8 @@
           "box-markers-april-tags",
           "rules",
           "arena-diagram"
-        ]
+        ],
+        "icon": "star"
       },
       {
         "product": "Programming Docs",
