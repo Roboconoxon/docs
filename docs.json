@@ -48,7 +48,8 @@
               "learning-python",
               "libraries",
               "motors",
-              "ultrasonic-sensor"
+              "ultrasonic-sensor",
+              "servos"
             ]
           }
         ]
