@@ -47,7 +47,8 @@
               "initialising-the-robot",
               "learning-python",
               "libraries",
-              "motors"
+              "motors",
+              "ultrasonic-sensor"
             ]
           }
         ]
