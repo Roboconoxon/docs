@@ -114,8 +114,8 @@
   "navbar": {
     "links": [
       {
-        "label": "Helpdesk",
-        "href": "https://support.roboconoxon.org.uk"
+        "href": "https://my.roboconoxon.org.uk",
+        "label": "MyRoboCon"
       }
     ],
     "primary": {
@@ -158,8 +158,8 @@
             "href": "https://support.roboconoxon.org.uk"
           },
           {
-            "label": "Participant Mail",
-            "href": "https://mail.google.com/a/participants.roboconoxon.org.uk"
+            "label": "MyRoboCon",
+            "href": "https://my.roboconoxon.org.uk"
           }
         ]
       }
@@ -171,7 +171,13 @@
   },
   "errors": {
     "404": {
-      "redirect": true
+      "redirect": false,
+      "title": "Page Not Found",
+      "description": "Oops... The page that you are looking for cannot be found."
     }
+  },
+  "appearance": {
+    "default": "dark",
+    "strict": true
   }
 }
